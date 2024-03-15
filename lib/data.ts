@@ -1,10 +1,6 @@
-import React from 'react';
 // import { CgWorkAlt } from 'react-icons/cg';
 // import { FaReact } from 'react-icons/fa';
 // import { LuGraduationCap } from 'react-icons/lu';
-// import corpcommentImg from '@/public/corpcomment.png';
-// import rmtdevImg from '@/public/rmtdev.png';
-// import wordanalyticsImg from '@/public/wordanalytics.png';
 import booksandquotesImg from '@/public/booksandquotes.png';
 import feelgoodImg from '@/public/feelgood.png';
 import portrait from '@/public/portrait.jpg';
@@ -44,7 +40,7 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const experiences = [
   {
     title: 'Graduated bootcamp',
     location: 'Miami, FL',
@@ -75,37 +71,36 @@ export const projects = [
   {
     title: 'Books and Quotes API',
     description:
-      'The Books and Quotes Web Application, built with Angular and .NET 6 C#, features CRUD functionality for managing books and quotes, secured with JWT authentication and designed responsively for all devices. Hosted on Azure, it showcases my full-stack development skills through its source code on GitHub and live deployment.',
+      'Books and Quotes Web App, using Angular and .NET 6 C#, features CRUD, JWT security, responsive design, hosted on Azure. Full-stack project on GitHub.',
     tags: ['.NET', 'Angular', 'SQL Server', 'Bootstrap', 'Azure'],
     imageUrl: booksandquotesImg,
   },
   {
     title: 'Feelgood App',
     description:
-      "At Feelgood, I was a frontend developer, working on React Native and TypeScript. I fixed bugs, added new features, and improved the app's logic. I also implemented a user experience reporting system to track satisfaction levels, enhancing overall user engagement.",
+      'At Feelgood, I enhanced a React Native app by fixing bugs, adding features, and improving logic, plus I developed a user experience reporting system to increase engagement.',
     tags: ['React Native', 'TypeScript', 'Redux', 'StyledComponents'],
     imageUrl: feelgoodImg,
   },
 ] as const;
 
-export const skillsData = [
+export const skills = [
   'HTML',
   'CSS',
   'JavaScript',
   'TypeScript',
+  'C#',
+  '.NET',
   'React',
   'Next.js',
   'Node.js',
   'Git',
   'Tailwind',
-  'Prisma',
   'MongoDB',
   'Redux',
   'GraphQL',
-  'Apollo',
   'Express',
   'PostgreSQL',
   'Python',
-  'Django',
   'Framer Motion',
 ] as const;
