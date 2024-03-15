@@ -1,6 +1,9 @@
+import React from 'react';
 // import { CgWorkAlt } from 'react-icons/cg';
 // import { FaReact } from 'react-icons/fa';
 // import { LuGraduationCap } from 'react-icons/lu';
+// import { FaHtml5, FaCss3 } from 'react-icons/fa';
+
 import booksandquotesImg from '@/public/booksandquotes.png';
 import feelgoodImg from '@/public/feelgood.png';
 import portrait from '@/public/portrait.jpg';
@@ -11,7 +14,7 @@ export const metadataInfo = {
     'I am a full-stack developer with 2 years of experience. I specialize in React, Next.js, TypeScript, .NET, SQL and NoSQL databases. I am open to full-time opportunities.',
 } as const;
 
-export const portraitImage = portrait;
+export const portraitImg = portrait;
 
 export const links = [
   {
@@ -85,6 +88,7 @@ export const projects = [
 ] as const;
 
 export const skills = [
+  // { name: 'HTML', icon: React.createElement('FaHtml5') },
   'HTML',
   'CSS',
   'JavaScript',

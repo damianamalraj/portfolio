@@ -2,16 +2,20 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { portraitImage } from '@/lib/data';
-import { animate, motion } from 'framer-motion';
+import { portraitImg } from '@/lib/data';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
+import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
+  const { ref } = useSectionInView('Home', 0.5);
+
   return (
     <section
+      ref={ref}
       id="home"
       className="relative mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
@@ -23,7 +27,7 @@ export default function Intro() {
             transition={{ type: 'tween', duration: 0.2 }}
           >
             <Image
-              src={portraitImage}
+              src={portraitImg}
               alt="Daniel portrait"
               width={192}
               height={192}
