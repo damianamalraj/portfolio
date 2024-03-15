@@ -5,6 +5,17 @@ import React from 'react';
 // import corpcommentImg from '@/public/corpcomment.png';
 // import rmtdevImg from '@/public/rmtdev.png';
 // import wordanalyticsImg from '@/public/wordanalytics.png';
+import booksandquotesImg from '@/public/booksandquotes.png';
+import feelgoodImg from '@/public/feelgood.png';
+import portrait from '@/public/portrait.jpg';
+
+export const metadataInfo = {
+  title: 'Daniel | Full-Stack Developer',
+  description:
+    'I am a full-stack developer with 2 years of experience. I specialize in React, Next.js, TypeScript, .NET, SQL and NoSQL databases. I am open to full-time opportunities.',
+} as const;
+
+export const portraitImage = portrait;
 
 export const links = [
   {
@@ -62,25 +73,18 @@ export const experiencesData = [
 
 export const projects = [
   {
-    title: 'CorpComment',
+    title: 'Books and Quotes API',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    // imageUrl: corpcommentImg,
+      'The Books and Quotes Web Application, built with Angular and .NET 6 C#, features CRUD functionality for managing books and quotes, secured with JWT authentication and designed responsively for all devices. Hosted on Azure, it showcases my full-stack development skills through its source code on GitHub and live deployment.',
+    tags: ['.NET', 'Angular', 'SQL Server', 'Bootstrap', 'Azure'],
+    imageUrl: booksandquotesImg,
   },
   {
-    title: 'rmtDev',
+    title: 'Feelgood App',
     description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-    // imageUrl: rmtdevImg,
-  },
-  {
-    title: 'Word Analytics',
-    description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    // imageUrl: wordanalyticsImg,
+      "At Feelgood, I was a frontend developer, working on React Native and TypeScript. I fixed bugs, added new features, and improved the app's logic. I also implemented a user experience reporting system to track satisfaction levels, enhancing overall user engagement.",
+    tags: ['React Native', 'TypeScript', 'Redux', 'StyledComponents'],
+    imageUrl: feelgoodImg,
   },
 ] as const;
 
