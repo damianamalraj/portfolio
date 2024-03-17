@@ -5,6 +5,10 @@ import './globals.css';
 import { metadataInfo } from '@/lib/data';
 import ActiveSectionContextProvider from '@/context/active-section-context';
 import Header from '@/components/header';
+import { Toaster } from 'react-hot-toast';
+import Footer from '@/components/footer';
+import ThemeSwitch from '@/components/theme-switch';
+import ThemeContextProvider from '@/context/theme-context';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,15 +25,21 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 pt-28 sm:pt-36`}
+        className={`${inter.className} bg-gray-50 text-gray-950 pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
-        <div className="bg-red-400 absolute top-0 right-[15%] h-[40rem] w-[32rem] rounded-full blur-[32rem] sm:w-[40rem] "></div>
+        <div className="bg-red-400 absolute top-0 right-[15%] h-[40rem] w-[32rem] rounded-full blur-[32rem] sm:w-[40rem]"></div>
         <div className="bg-blue-400 absolute top-0 right-[40%] h-[40rem] w-[32rem] rounded-full blur-[32rem] sm:w-[40rem]"></div>
 
-        <ActiveSectionContextProvider>
-          <Header />
-          {children}
-        </ActiveSectionContextProvider>
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
+            <Footer />
+
+            <Toaster position="top-right" toastOptions={{ duration: 10000 }} />
+            <ThemeSwitch />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );
