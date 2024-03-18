@@ -1,13 +1,14 @@
 import React from 'react';
 
-import { CgWorkAlt } from 'react-icons/cg';
-import { LuGraduationCap } from 'react-icons/lu';
-import { PiCertificateBold } from 'react-icons/pi';
-
+import portrait from '@/public/portrait.jpg';
+import portfolio from '@/public/portfolio.png';
 import booksandquotesImg from '@/public/booksandquotes.png';
 import feelgoodImg from '@/public/feelgood.png';
-import portrait from '@/public/portrait.jpg';
+import e_walletImg from '@/public/e-wallet.png';
 
+import { LuGraduationCap } from 'react-icons/lu';
+import { PiCertificateBold } from 'react-icons/pi';
+import { CgWorkAlt } from 'react-icons/cg';
 import { IoIosGitBranch } from 'react-icons/io';
 import { TbApi } from 'react-icons/tb';
 import { GoLinkExternal } from 'react-icons/go';
@@ -123,6 +124,25 @@ export const experiences = [
 
 export const projects = [
   {
+    title: 'My Portfolio',
+    description:
+      'A dynamic portfolio built with Next.js and Tailwind CSS, coded in TypeScript for reliability and speed.',
+    tags: ['Next.js', 'TypeScript', 'Context API', 'Tailwind'],
+    imageUrl: portfolio,
+    links: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/damianamalraj/portfolio',
+        icon: React.createElement(IoIosGitBranch),
+      },
+      {
+        name: 'Live',
+        url: 'https://damianamalraj.vercel.app',
+        icon: React.createElement(GoLinkExternal),
+      },
+    ],
+  },
+  {
     title: 'Books and Quotes API',
     description:
       'Angular & .NET 6 C# full-stack CRUD app with JWT security & responsive design, hosted on Azure. Project on GitHub.',
@@ -161,6 +181,25 @@ export const projects = [
       {
         name: 'Feelgood App',
         url: 'https://feelgood.se/app',
+        icon: React.createElement(GoLinkExternal),
+      },
+    ],
+  },
+  {
+    title: 'E-Wallet App',
+    description:
+      'A Vue.js application for credit card management with addition, activation, and storage functionalities.',
+    tags: ['Vue.js', 'SASS', 'SPA', 'Form validation'],
+    imageUrl: e_walletImg,
+    links: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/damianamalraj/e-wallet-vuejs',
+        icon: React.createElement(IoIosGitBranch),
+      },
+      {
+        name: 'Live',
+        url: 'https://damianamalraj.github.io/e-wallet-vuejs/',
         icon: React.createElement(GoLinkExternal),
       },
     ],

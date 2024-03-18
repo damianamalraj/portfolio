@@ -68,7 +68,7 @@ export default function Experience() {
                 <a
                   href={item.reference.url}
                   target="_blank"
-                  className="text-2xl flex items-center !mt-2 text-blue-600 dark:text-blue-400"
+                  className="text-2xl flex items-center !mt-2 text-blue-600 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-500 transition"
                 >
                   {item.reference.icon}
                 </a>

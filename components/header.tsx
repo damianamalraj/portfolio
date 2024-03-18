@@ -16,7 +16,9 @@ export default function Header() {
   return (
     <header className="z-[999] relative">
       <div className="ml-[1rem] -translate-y-24 sm:translate-y-[initial] sm:fixed sm:top-[1rem]  w-14 shadow-2xl shadow-black/[.5]">
-        <Image className="flex" src={logo} alt="Damian" />
+        <a href="#home">
+          <Image className="flex" src={logo} alt="Damian" />
+        </a>
       </div>
 
       <motion.div
