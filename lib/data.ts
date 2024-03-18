@@ -8,6 +8,11 @@ import booksandquotesImg from '@/public/booksandquotes.png';
 import feelgoodImg from '@/public/feelgood.png';
 import portrait from '@/public/portrait.jpg';
 
+import { IoIosGitBranch } from 'react-icons/io';
+import { TbApi } from 'react-icons/tb';
+import { GoLinkExternal } from 'react-icons/go';
+import { FaRegFilePdf } from 'react-icons/fa6';
+
 export const metadataInfo = {
   title: 'Damian | Full-Stack Developer',
   description:
@@ -51,6 +56,11 @@ export const experiences = [
       'Internship position as a Software Developer, enhancing my skills in software development and contributing to projects.',
     icon: React.createElement(CgWorkAlt),
     date: 'Aug 2022 - May 2023',
+    reference: {
+      name: 'Recomendation Letter',
+      url: '/Rekomendationsbrev_Damian_Amalraj_signed.pdf',
+      icon: React.createElement(FaRegFilePdf),
+    },
   },
   {
     title: 'Web Developer at Displayed Web',
@@ -67,6 +77,11 @@ export const experiences = [
       'Completed the Five Step Coding Challenge, demonstrating proficiency in coding fundamentals.',
     icon: React.createElement(PiCertificateBold),
     date: 'Jul 2022',
+    reference: {
+      name: 'Certificate',
+      url: '/CodeInstitute AACC Certificate _ Code Institute.pdf',
+      icon: React.createElement(FaRegFilePdf),
+    },
   },
   {
     title: 'Graduated from IT-Högskolan',
@@ -75,6 +90,11 @@ export const experiences = [
       'Achieved a diploma in Computer Software Engineering, focusing on both theoretical and practical aspects of software development.',
     icon: React.createElement(LuGraduationCap),
     date: 'Aug 2021 - May 2023',
+    reference: {
+      name: 'Diploma',
+      url: '/Examensbevis - Damian Clitus Robert Amalraj.pdf',
+      icon: React.createElement(FaRegFilePdf),
+    },
   },
   {
     title: 'Graduated from Thorildsplans gymnasium',
@@ -83,6 +103,7 @@ export const experiences = [
       'Completed high school with a focus on information technology, aimed at building and shaping the future society.',
     icon: React.createElement(LuGraduationCap),
     date: 'Aug 2017 - Jun 2020',
+    reference: {},
   },
 
   {
@@ -92,6 +113,11 @@ export const experiences = [
       'Completed The Web Developer Bootcamp course, acquiring comprehensive web development skills.',
     icon: React.createElement(PiCertificateBold),
     date: 'Feb 2020',
+    reference: {
+      name: 'Certificate',
+      url: '/UC-15578d73-6c30-4ccb-8f79-bd44f9019976.pdf',
+      icon: React.createElement(FaRegFilePdf),
+    },
   },
 ] as const;
 
@@ -102,6 +128,23 @@ export const projects = [
       'Angular & .NET 6 C# full-stack CRUD app with JWT security & responsive design, hosted on Azure. Project on GitHub.',
     tags: ['.NET', 'Angular', 'SQL Server', 'Bootstrap', 'Azure'],
     imageUrl: booksandquotesImg,
+    links: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/damianamalraj/books-and-quotes-app',
+        icon: React.createElement(IoIosGitBranch),
+      },
+      {
+        name: 'Live',
+        url: 'https://damianamalraj.github.io/books-and-quotes-app',
+        icon: React.createElement(GoLinkExternal),
+      },
+      {
+        name: 'API',
+        url: 'https://books-and-quotes-api.azurewebsites.net/swagger/index.html',
+        icon: React.createElement(TbApi),
+      },
+    ],
   },
   {
     title: 'Feelgood App',
@@ -109,6 +152,18 @@ export const projects = [
       "Improved Feelgood's React Native app: bug fixes, new features, enhanced logic, and built a user engagement reporting system.",
     tags: ['React Native', 'TypeScript', 'Redux', 'StyledComponents'],
     imageUrl: feelgoodImg,
+    links: [
+      {
+        name: 'Recomendation Letter',
+        url: '/Rekomendationsbrev_Damian_Amalraj_signed.pdf',
+        icon: React.createElement(FaRegFilePdf),
+      },
+      {
+        name: 'Feelgood App',
+        url: 'https://feelgood.se/app',
+        icon: React.createElement(GoLinkExternal),
+      },
+    ],
   },
 ] as const;
 

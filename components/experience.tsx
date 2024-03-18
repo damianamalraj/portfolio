@@ -15,11 +15,25 @@ export default function Experience() {
   const { ref } = useSectionInView('Experience', 0.25);
   const { theme } = useTheme();
 
+  // experiences is a array of objects
+  type Props = {
+    title: string;
+    location: string;
+    description: string;
+    icon: JSX.Element;
+    date: string;
+    reference?: { name: string; url: string; icon: JSX.Element };
+  };
+
+  type ExperiencesProps = readonly Props[];
+
+  const exp: ExperiencesProps = experiences as readonly Props[];
+
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="" animate>
-        {experiences.map((item, index) => (
+        {exp.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
@@ -50,6 +64,15 @@ export default function Experience() {
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
+              {item.reference && (
+                <a
+                  href={item.reference.url}
+                  target="_blank"
+                  className="text-2xl flex items-center !mt-2 text-blue-600 dark:text-blue-400"
+                >
+                  {item.reference.icon}
+                </a>
+              )}
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
