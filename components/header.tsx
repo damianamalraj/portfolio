@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import { useActiveSectionContext } from '@/context/active-section-context';
+import Image from 'next/image';
+import logo from '@/app/favicon.ico';
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -13,6 +15,10 @@ export default function Header() {
 
   return (
     <header className="z-[999] relative">
+      <div className="ml-[1rem] -translate-y-24 sm:translate-y-[initial] sm:fixed sm:top-[1rem]  w-14 shadow-2xl shadow-black/[.5]">
+        <Image className="flex" src={logo} alt="Damian" />
+      </div>
+
       <motion.div
         className="fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] hidden sm:block sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
         initial={{ y: -100, x: '-50%', opacity: 0 }}
