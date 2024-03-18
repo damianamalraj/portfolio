@@ -7,9 +7,9 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
-import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
+import { FaGithubSquare } from 'react-icons/fa';
 
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5);
@@ -91,11 +91,11 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full hover:scale-[1.15] hover:text-blue-700 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-[#0e76a8]"
+          className="group bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full hover:scale-[1.15] hover:text-blue-700 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-[#0e76a8] hover:bg-white"
           href="https://www.linkedin.com/in/damianamalraj/"
           target="_blank"
         >
-          <BsLinkedin />
+          <BsLinkedin className="group-hover:bg-white rounded-sm" />
         </a>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.3rem] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-gray-950"

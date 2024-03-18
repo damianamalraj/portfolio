@@ -15,7 +15,6 @@ export default function Experience() {
   const { ref } = useSectionInView('Experience', 0.25);
   const { theme } = useTheme();
 
-  // experiences is a array of objects
   type Props = {
     title: string;
     location: string;
@@ -68,7 +67,7 @@ export default function Experience() {
                 <a
                   href={item.reference.url}
                   target="_blank"
-                  className="text-2xl flex items-center !mt-2 text-blue-600 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-500 transition"
+                  className="text-3xl flex items-center !mt-2 text-blue-600 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-300 transition"
                 >
                   {item.reference.icon}
                 </a>

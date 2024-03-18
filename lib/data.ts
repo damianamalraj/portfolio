@@ -13,6 +13,7 @@ import { IoIosGitBranch } from 'react-icons/io';
 import { TbApi } from 'react-icons/tb';
 import { GoLinkExternal } from 'react-icons/go';
 import { FaRegFilePdf } from 'react-icons/fa6';
+import { AiOutlineFilePdf } from 'react-icons/ai';
 
 export const metadataInfo = {
   title: 'Damian | Full-Stack Developer',
@@ -176,7 +177,7 @@ export const projects = [
       {
         name: 'Recomendation Letter',
         url: '/Rekomendationsbrev_Damian_Amalraj_signed.pdf',
-        icon: React.createElement(FaRegFilePdf),
+        icon: React.createElement(AiOutlineFilePdf),
       },
       {
         name: 'Feelgood App',
