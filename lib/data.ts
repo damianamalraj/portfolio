@@ -71,6 +71,11 @@ export const experiences = [
       'Part-time Web Developer, gaining practical experience in web development and content management systems.',
     icon: React.createElement(CgWorkAlt),
     date: 'Apr 2022 - Jun 2022',
+    reference: {
+      name: 'Recomendation Letter',
+      url: '/Letter of Recommendation - Damian Amalraj.pdf',
+      icon: React.createElement(FaRegFilePdf),
+    },
   },
   {
     title: 'Five Step Coding Challenge Certification by Code Institute',
