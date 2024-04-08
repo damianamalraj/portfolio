@@ -219,7 +219,6 @@ export const skills = [
   'JavaScript',
   'TypeScript',
   'C#',
-  'Python',
   'SQL',
 
   // Frontend Development
