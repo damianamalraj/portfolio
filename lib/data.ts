@@ -233,11 +233,11 @@ export const skills = [
   // Backend Development
   '.NET',
   'Node.js',
-  'FastApi',
-  'Nest.js',
   'Express',
+  'Nest.js',
 
   // Databases
+  'SQL Server',
   'MongoDB',
   'PostgreSQL',
 
