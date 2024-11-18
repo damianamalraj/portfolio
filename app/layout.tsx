@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-
 import { metadataInfo } from '@/lib/data';
 import ActiveSectionContextProvider from '@/context/active-section-context';
 import Header from '@/components/header';
@@ -9,6 +8,7 @@ import { Toaster } from 'react-hot-toast';
 import Footer from '@/components/footer';
 import ThemeSwitch from '@/components/theme-switch';
 import ThemeContextProvider from '@/context/theme-context';
+import BookingCallBtn from '@/components/booking-call-btn';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -36,8 +36,10 @@ export default function RootLayout({
             {children}
             <Footer />
 
-            <Toaster position="top-right" toastOptions={{ duration: 10000 }} />
             <ThemeSwitch />
+            <BookingCallBtn />
+
+            <Toaster position="top-right" toastOptions={{ duration: 10000 }} />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
