@@ -64,6 +64,14 @@ export const experiences = [
       icon: React.createElement(FaRegFilePdf),
     },
   },
+  // {
+  //   title: 'Back-End Developer Internship at Planet Peanut',
+  //   location: 'Copenhagen, Denmark (Remote)',
+  //   description:
+  //     'Internship position at Planet Peanut as a Lead Backend Developer, where I focused on enhancing my backend development skills while leading the architecture and implementation of API development for a tournament-based math game.',
+  //   icon: React.createElement(CgWorkAlt),
+  //   date: 'July 2024 - Sep 2024',
+  // },
   {
     title: 'Software Developer Internship at QSimbo',
     location: 'Växjö, Sweden (Remote)',
