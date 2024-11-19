@@ -52,7 +52,7 @@ const BookCallBtn: FunctionComponent = () => {
             setShowModel(false);
           }
         }}
-        className="h-full w-full md:w-[90%] md:h-[90%] rounded-lg shadow-md"
+        className="h-full w-full md:w-[80%] md:h-[80%] rounded-lg shadow-md"
       >
         {/* {<!-- Google Calendar Appointment Scheduling begin --> */}
         <iframe

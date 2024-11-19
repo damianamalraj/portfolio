@@ -51,35 +51,32 @@ export const links = [
 ] as const;
 
 export const experiences = [
-  // {
-  //   title: ' Student At Chas Academy',
-  //   location: 'Stockholm, Sweden',
-  //   description:
-  //     'Currently pursuing a diploma in .NET Development at Chas Academy, where I am deepening my expertise in .NET technologies, honing skills in backend and frontend development while working on real-world projects and applications.',
-  //   icon: React.createElement(LuGraduationCap),
-  //   date: 'Aug 2023 - May 2025',
-  // },
-  // {
-  //   title: 'Back-End Developer Internship at Planet Peanut',
-  //   location: 'Copenhagen, Denmark (Remote)',
-  //   description:
-  //     'Internship position at Planet Peanut as a Lead Backend Developer, where I focused on enhancing my backend development skills while leading the architecture and implementation of API development for a tournament-based math game.',
-  //   icon: React.createElement(CgWorkAlt),
-  //   date: 'July 2024 - Sep 2024',
-  // },
-  // {
-  //   title: 'Software Developer Internship at QSimbo',
-  //   location: 'Växjö, Sweden (Remote)',
-  //   description:
-  //     'Internship position at QSimbo as a Full-Stack Developer, focusing on enhancing my software development skills while contributing to the design and implementation of a booking system for small businesses.',
-  //   icon: React.createElement(CgWorkAlt),
-  //   date: 'May 2024 - July 2024',
-  //   reference: {
-  //     name: 'LinkedIn Post Mention',
-  //     url: 'https://www.linkedin.com/posts/qsimbo_qsimbo-bookingsystem-propertymanagement-activity-7213844924658548737-iWLG?utm_source=share&utm_medium=member_desktop',
-  //     icon: React.createElement(FaLinkedin),
-  //   },
-  // },
+  {
+    title: 'Student At Chas Academy',
+    location: 'Stockholm, Sweden',
+    description:
+      'Currently pursuing a diploma in .NET Development at Chas Academy, where I am deepening my expertise in .NET technologies, honing skills in backend and frontend development while working on real-world projects and applications.',
+    icon: React.createElement(LuGraduationCap),
+    date: 'Aug 2023 - May 2025',
+    reference: {
+      name: 'Utbildningsplan',
+      url: '/Utbildningsplan NET23.pdf',
+      icon: React.createElement(FaRegFilePdf),
+    },
+  },
+  {
+    title: 'Software Developer Internship at QSimbo',
+    location: 'Växjö, Sweden (Remote)',
+    description:
+      'Internship position at QSimbo as a Full-Stack Developer, focusing on enhancing my software development skills while contributing to the design and implementation of a booking system for small businesses.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'May 2024 - July 2024',
+    reference: {
+      name: 'LinkedIn Post Mention',
+      url: 'https://www.linkedin.com/posts/qsimbo_qsimbo-bookingsystem-propertymanagement-activity-7213844924658548737-iWLG?utm_source=share&utm_medium=member_desktop',
+      icon: React.createElement(FaLinkedin),
+    },
+  },
   {
     title: 'Software Developer Internship at Redmind',
     location: 'Stockholm, Sweden',
@@ -241,51 +238,42 @@ export const projects = [
   },
 ] as const;
 
-export const skills = [
-  // Programming Languages
-  'HTML',
-  'CSS/SASS',
-  'JavaScript',
-  'TypeScript',
-  'C#',
-  'SQL',
-
-  // Frontend Development
-  'React',
-  'Next.js',
-  'Vue.js',
-  'Angular',
-  'React Native',
-  'Redux',
-  'Tailwind',
-
-  // Backend Development
-  '.NET',
-  'Node.js',
-  'Express',
-  'Nest.js',
-
-  // Databases
-  'SQL Server',
-  'MongoDB',
-  'PostgreSQL',
-
-  // Testing & Quality Assurance
-  'Jest (TDD)',
-  'Cypress',
-
-  // DevOps & CI/CD
-  'Bash',
-  'Docker',
-  'GitHub Actions CI/CD',
-
-  // Cloud Services
-  'Azure',
-
-  // Project Management
-  'Scrum',
-  'Kanban',
-
-  // Other Technologies
-  'Git',
-] as const;
+export const skills = {
+  programming: ['C#', '.NET', 'JavaScript', 'TypeScript', 'PHP'],
+  frontend: [
+    'HTML',
+    'CSS/SASS',
+    'Bootstrap',
+    'Tailwind',
+    'React.js',
+    'Redux.js',
+    'React Native',
+    'Next.js',
+    'Vue.js',
+    'Angular.js',
+  ],
+  backend: [
+    '.NET',
+    'Node.js',
+    'Express.js',
+    'Nest.js',
+    'Laravel',
+    'SQL',
+    'SQL Server',
+    'PostgreSQL',
+    'MongoDB',
+  ],
+  others: [
+    'Git',
+    'Bash',
+    'Docker',
+    'RESTful APIs',
+    'GraphQL',
+    'Jest (TDD)',
+    'Cypress',
+    'CI/CD',
+    'GitHub Actions CI/CD',
+    'Azure',
+    'Agile',
+  ],
+} as const;
